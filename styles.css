@@ -18,11 +18,6 @@
 
 }
 
-body, html {
-    height: 100%;
-    
-}
-
 .container {
     display: grid;
     grid-template-columns: minmax(min-content, 1fr) minmax(min-content, 5fr);
