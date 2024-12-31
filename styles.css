@@ -68,14 +68,15 @@
 }
 
 .header {
-    background-color: white;
     padding: 1.3rem 2rem;
     padding-bottom: .8rem;
     display: grid;
     grid-template-columns: 2fr 1.4fr;
     grid-template-rows: 1fr 1.4fr;
     gap: 1rem;
-    box-shadow: 0 4px 20px -20px black;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+    z-index: 1;
 }
 
 button {
@@ -164,7 +165,7 @@ input {
     padding: 2rem;
     background-color: #e2e8f0;
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2.6fr 1fr;
     grid-template-rows: 1fr 1fr;
     column-gap: 30px;
     row-gap: 30px;
@@ -185,10 +186,12 @@ input {
 .project-card {
     border-left: 10px solid #f0b429;
     border-radius: 10px;
+    min-width: 232px;
     height: 9rem;
     background-color: white;
     padding: 2rem 1rem;
     line-height: 1.1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 
     display: grid;
     grid-template-rows: 1fr 5fr;
@@ -244,24 +247,47 @@ input {
     display: grid;
     border-radius: 10px;
     padding: 2rem;
-    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
-.trending {
+.announce > div:first-child {
+    font-weight: bold;
+    margin-bottom: .3rem;
+}
 
+.announce > div:nth-child(2) {
+    color: #808080;
+    font-size: .9rem;
+}
+
+hr {
+    width: 100%;
+    margin: 1.2rem 0rem;
+}
+
+.trending img {
+    width: 3rem;
 }
 
 .trending-card {
     background-color: white;
     display: grid;
     border-radius: 10px;
+    padding: 2rem;
+    gap: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
-.announce > div:first-child {
-    font-weight: bold;
+.trending-profile {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: .4fr 1fr;
 }
 
-hr {
-    width: 100%;
+.trending-profile > div > div:nth-child(2) {
+    color: #808080;
+    margin-top: .3rem;
 }
+
+
 
